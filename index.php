@@ -4,7 +4,7 @@ $URL ="sql5.freemysqlhosting.net";
 $database = "sql585297";
 $usuario = "ql585297";
 $password = "wW7*jF7%";
-%port = 3306;
+$port = 3306;
 // CREAR CONNECCION
 $conexion =mysql_connect(
 $URL,
