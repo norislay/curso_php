@@ -6,7 +6,7 @@ $usuario = "ql585297";
 $password = "wW7*jF7%";
 $port = 3306;
 // CREAR CONNECCION
-$conexion =mysql_connect(
+$conexion =mysqli_connect(
 $URL,
 $usuario,
 $password,
@@ -16,7 +16,7 @@ $port);
 die ("Finalizo la conexion");
 }  
 echo ("conexion exitosa");  
-$result = mysql_query($conexion,$query); 
+$result = mysqli_query($conexion,$query); 
 while ($row = mysqli_fetch_assoc($result)) {
 	echo $row ['id']." " .$row['nombre'].''.
 	$row  ['descripcion'];
