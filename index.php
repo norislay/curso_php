@@ -12,7 +12,7 @@ $usuario,
 $password,
 $database,
 $port);                                  
- if(!$conexion{
+ if(!$conexion){
 die ("Finalizo la conexion");
 }  
 echo ("conexion exitosa");                               
