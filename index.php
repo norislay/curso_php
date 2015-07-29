@@ -1,4 +1,4 @@
- <php>
+ <?php
 echo "CONEXION A LA BASE DE DATOS";
 $URL ="sql5.freemysqlhosting.net";
 $database = "sql585297";
@@ -16,4 +16,4 @@ $port);
 die ("Finalizo la conexion");
 }  
 echo ("conexion exitosa");                               
-</php>
+?>
