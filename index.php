@@ -15,5 +15,15 @@ $port);
  if(!$conexion){
 die ("Finalizo la conexion");
 }  
-echo ("conexion exitosa");                               
+echo ("conexion exitosa");  
+$result = mysql_query($conexion,$query); 
+while ($row = mysqli_fetch_assoc)($result) {
+	echo $row ['id']." " .$row['nombre'].''.
+	$row  ['descripcion'];
+
+
+
+
+                            	
+                            }                            
 ?>
