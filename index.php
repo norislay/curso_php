@@ -22,17 +22,14 @@ $result = mysqli_query($conexion,$query);
 while ($row = mysqli_fetch_assoc($result)) {
 	echo $row ['id']." " .$row['nombre'].''.
 	$row  ['descripcion'];
-
-
-
-
                             	
                             } 
 mysqli_close (conexion);  
-$response =  Unirest \Request :: get 
- ("http:/bestapi-waze-unoffical-free-v1.p.mashape.com /addresslist?address = universidad panama " 
- array ( "x-Mashape-key" => "ZA8k3CJvxdmshTOXPS3S6WV6vnfwp1hj5F9jsnNujBw5ckjh2y", 
- " Accept "  =>   "application/josn" 
- ));  
- echo $ response;                                     
+$response = Unirest\Request::get("https://bestapi-waze-unoffical-free-v1.p.mashape.com/addressList?address=Universidad+de+Panama",
+  array(
+    "X-Mashape-Key" => "ZA8k3CJvxdmshT0XPS3S6WV6vnfwp1hj5F9jsnNujBw5cKjh2Y",
+    "Accept" => "application/json"
+  )
+);
+
 ?>
