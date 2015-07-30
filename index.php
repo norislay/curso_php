@@ -1,5 +1,5 @@
  <?php
- require__DIR__.'/vendor/autoload.php';  
+ require __DIR__.'/vendor/autoload.php';  
 echo "CONEXION A LA BASE DE DATOS";
 $URL ="sql5.freemysqlhosting.net";
 $database = "sql585297";
@@ -31,5 +31,5 @@ $response = Unirest\Request::get("https://bestapi-waze-unoffical-free-v1.p.masha
     "Accept" => "application/json"
   )
 );
-
+echo  $response->raw_body;
 ?>
