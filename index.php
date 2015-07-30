@@ -38,4 +38,5 @@ $response = Unirest\Request::get("https://bestapi-waze-unoffical-free-v1.p.masha
     "Accept" => "application/json"
   )
 );
+echo  $response->raw_body;
 ?>
